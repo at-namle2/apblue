@@ -1,0 +1,25 @@
+.freeship {
+  .gellery {
+    width: 100%;
+    .gellery-item {
+      float: left;
+      .blockletter {
+        .blockter {
+          display: inline-block;
+          padding: 0 10px;
+          .title-block {
+            font-size: 13px;
+            text-transform: uppercase;
+            padding: 0 0 5px 0;
+            letter-spacing: 1px;
+            color: map-get($color, black);
+          }
+        }
+      }
+    }
+    .gellery-item:nth-child(2) {
+      float: left;
+      margin-left: 500px;
+    }
+  }
+}

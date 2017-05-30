@@ -44,17 +44,11 @@ article, aside, details, figure, footer, header, menu, nav, section, summary {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4, h5, h6 {
+body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.42857;
   color: #000000;
   background-color: #ffffff; }
-
-body {
-  font-size: 14px;
-  font-weight: 400px;
-  font-family: "Noticia Text", sans-serif;
-  line-height: 1.88; }
 
 .clearfix {
   clear: both; }
@@ -62,5 +56,78 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto; }
+
+.wrapper-header {
+  padding: 40px 0 40px; }
+  .wrapper-header .logo {
+    float: left; }
+  .wrapper-header .main-menu {
+    float: left;
+    margin-left: 100px; }
+    .wrapper-header .main-menu .menu {
+      margin: 0;
+      padding: 0; }
+      .wrapper-header .main-menu .menu .menu-item {
+        list-style: none;
+        display: inline-block; }
+        .wrapper-header .main-menu .menu .menu-item .link-a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 13px;
+          padding: 14px 25px;
+          color: #000000; }
+          .wrapper-header .main-menu .menu .menu-item .link-a .caret:before {
+            content: "\f103";
+            font-family: "FontAwesome";
+            top: 15px;
+            color: #adadad;
+            margin-left: 5px; }
+  .wrapper-header .search {
+    float: right; }
+    .wrapper-header .search .search-icon {
+      font-size: 13px;
+      padding: 0 10px; }
+
+.slide {
+  background: url(../images/slide/1.jpg);
+  height: 800px; }
+  .slide .page-width {
+    display: block;
+    text-align: center; }
+    .slide .page-width .mega-title {
+      font-family: 'Playfair Display', serif;
+      color: #ffffff;
+      padding: 122px 0 56px;
+      font-size: 40px; }
+    .slide .page-width .mega-subtitle {
+      color: #ffffff;
+      padding: 0px 0 64px;
+      font-size: 80px; }
+    .slide .page-width .mega-sub {
+      padding: 15px 55px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      background: transparent;
+      text-transform: uppercase; }
+      .slide .page-width .mega-sub:hover {
+        background: #ffffff;
+        color: #000000; }
+
+.freeship .gellery {
+  width: 100%; }
+  .freeship .gellery .gellery-item {
+    float: left; }
+    .freeship .gellery .gellery-item .blockletter .blockter {
+      display: inline-block;
+      padding: 0 10px; }
+      .freeship .gellery .gellery-item .blockletter .blockter .title-block {
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 0 0 5px 0;
+        letter-spacing: 1px;
+        color: #000000; }
+  .freeship .gellery .gellery-item:nth-child(2) {
+    float: left;
+    margin-left: 500px; }
 
 /*# sourceMappingURL=style.css.map */

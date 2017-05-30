@@ -2,19 +2,18 @@
   margin: 0;
   padding: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: 'Roboto', sans-serif;
+//   line-height: 1.42857;
+//   color: map-get($color, black);
+//   background-color: map-get($color, white);
+// }
+
+body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.42857;
   color: map-get($color, black);
   background-color: map-get($color, white);
-}
-
-body {
-  color: map-get($color, gray);
-  font-size: 14px;
-  font-weight: 400px;
-  font-family: "Noticia Text", sans-serif;
-  line-height: 1.88;
 }
 .clearfix {
   clear: both;

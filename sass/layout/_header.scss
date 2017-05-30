@@ -1,0 +1,69 @@
+.wrapper-header {
+  padding: 40px 0 40px;
+  .logo {
+    float: left;
+  }
+  .main-menu {
+    float: left;
+    margin-left: 100px;
+    .menu {
+      margin: 0;
+      padding: 0;
+      .menu-item {
+        list-style: none;
+        display: inline-block;
+        .link-a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 13px;
+          padding: 14px 25px;
+          color: map-get($color, black);
+          .caret:before {
+            content: "\f103";
+            font-family: "FontAwesome";
+            top: 15px;
+            color: map-get($color, gray);
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  .search {
+    float: right;
+    .search-icon {
+      font-size: 13px;
+      padding: 0 10px;
+    }
+  }
+}
+.slide {
+  background: url(../images/slide/1.jpg);
+  height: 800px;
+  .page-width {
+    display: block;
+    text-align: center;
+    .mega-title {
+      font-family: 'Playfair Display', serif;
+      color: map-get($color, white);
+      padding: 122px 0 56px;
+      font-size: 40px;
+    }
+    .mega-subtitle {
+      color: map-get($color, white);
+      padding: 0px 0 64px;
+      font-size: 80px;
+    }
+    .mega-sub {
+      padding: 15px 55px;
+      border: 1px solid map-get($color, white);
+      color: map-get($color, white);
+      background: transparent;
+      text-transform: uppercase;
+      &:hover {
+        background: map-get($color, white);
+        color: map-get($color, black);
+      }
+    }
+  }
+}
