@@ -3,14 +3,12 @@
   padding: 0;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 500;
-  line-height: 1.1;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.42857;
   color: map-get($color, black);
+  background-color: map-get($color, white);
 }
-img {
-  width: 100%;
-}
+
 body {
   color: map-get($color, gray);
   font-size: 14px;
