@@ -36,18 +36,29 @@
         color: map-get($color, gray_3);
         height: 35px;
         margin-left: 10px;
+        background: map-get($color, gray_4);
+        color: map-get($color, gray_3);
+        outline: none;
+        border: none;
       }
       .subscribe {
         width: 128px;
         padding: 6px 20px;
-        color: map-get($color, gray_3);
-        height: 51px;
+        height: 47px;
+        background: map-get($color, gray_4);
         color: map-get($color, black);
         margin-left: -5px;
         line-height: 34px;
         font-size: 13px;
         text-transform: uppercase;
         font-weight: 700;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        &:hover {
+          color: map-get($color, orange);
+          background: map-get($color, gray_5);
+        }
       }
     }
   }
@@ -81,6 +92,14 @@
   .img-show {
     width: 100%;
     height: auto;
+  }
+  .poducts-images {
+    @extend %poducts-images;
+  }
+  .shows-item {
+    &:hover {
+     @extend %hover-images;
+    }
   }
 }
 .features {
@@ -136,6 +155,9 @@
           background: map-get($color, orange);
         }
       }
+      .active {
+        background: map-get($color, orange);
+      }
     }
   }
 }
@@ -173,5 +195,13 @@
   .img-mum {
     width: 100%;
     height: auto;
+  }
+  .poducts-images {
+    @extend %poducts-images;
+  }
+  .mum-item {
+    &:hover {
+      @extend %hover-images;
+    }
   }
 }
