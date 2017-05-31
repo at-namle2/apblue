@@ -69,8 +69,6 @@
       .cart {
         position: relative;
         top: 40%;
-        text-align: center;
-        text-transform: uppercase;
         .span2 {
           border-bottom: 2px dotted;
           padding-bottom: 5px;
@@ -90,7 +88,6 @@
           display: inline-block;
           .view {
             border: 1px solid map-get($color, black);
-            text-align: center;
             font-size: 15px;
             font-weight: 700;
             color: map-get($color, white);
@@ -99,9 +96,9 @@
             opacity: 1;
             padding: 10px;
             &:hover {
-              background-color: #f37351;
-              border: 1px solid #f37351;
-              color: #fff;
+              background-color: map-get($color, black_5);
+              border: 1px solid map-get($color, black_5);
+              color: map-get($color, white);
               transition: all 0.35s linear;
             }
           }
