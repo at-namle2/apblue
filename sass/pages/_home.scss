@@ -128,12 +128,12 @@
       .btn-pagi {
         background-color: transparent;
         border-radius: 100%;
-        background-color: map-get($color, gray);
+        background: map-get($color, gray);
         width: 15px;
         height: 15px;
         border: none;
         &:hover {
-          color: map-get($color, orange);
+          background: map-get($color, orange);
         }
       }
     }
