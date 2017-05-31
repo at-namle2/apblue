@@ -1,0 +1,175 @@
+.wrapper-footer {
+  height: 500px;
+  .ins-tag {
+    width: 100%;
+    .ins-tag-item {
+      width: 50%;
+      float: left;
+      .title-ins {
+        color: map-get($color, white);
+        font-size: 20px;
+        @extend %title-ins;
+      }
+      .instagram {
+        padding: 60px 0;
+        .gram {
+          padding: 0;
+          margin: 0;
+          .gram-item {
+            display: inline-block;
+            padding: 0 40px;
+          }
+        }
+      }
+      .follow {
+        font-size: 13px;
+        color: map-get($color, white);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+    .bg {
+      background: url(../images/insgrame/bg_1.jpg) no-repeat;
+      height: 500px;
+      padding: 100px 0 0 0;
+      text-align: center;
+    }
+    .bgf {
+      background: url(../images/insgrame/bg_2.jpg) no-repeat;
+      height: 500px;
+      padding: 100px 0 0 0;
+      text-align: center;
+      .bg-btn {
+        padding: 110px 0;
+        .btn-find {
+          padding: 20px 70px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-size: 13px;
+          background: map-get($color, white);
+          outline: none;
+          border: none;
+          &:hover {
+            background: map-get($color, black);
+            color: map-get($color, white);
+          }
+        }
+      }
+    }
+  }
+}
+.wrap-blue {
+  background: map-get($color, black_3);
+  height: 400px;
+  .blues {
+    width: 100%;
+    .blue-item {
+      float: left;
+      width: 25%;
+      .title-blue {
+        font-size: 30px;
+        color: map-get($color, white);
+        margin-bottom: 34px;
+        text-transform: uppercase;
+      }
+      .title-blues {
+        font-size: 15px;
+        color: map-get($color, white);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+      .lorem {
+        color: map-get($color, gray_3);
+      }
+      .title-ins {
+        color: map-get($color, orange);
+        margin-top: 10px;
+        font-size: 15px;
+        @extend %title-ins;
+      }
+      .list-blue {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        .list-blue-item {
+          color: map-get($color, gray_3);
+          margin-bottom: 10px;
+          &:before {
+            position: absolute;
+            content: "";
+            width: 82px;
+            height: 3px;
+            border-top: 2px dotted map-get($color, black_2);
+            padding-bottom: 10px;
+            top: -9px;
+            left: 0;
+          }
+          &:after {
+            position: absolute;
+            content: "";
+            width: 82px;
+            height: 3px;
+            border-top: 2px dotted map-get($color, black_2);
+            padding-bottom: 10px;
+            bottom: -20px;
+            left: 0;
+          }
+        }
+      }
+      .list-blues {
+        margin: 0;
+        padding: 0;
+        .list-blues-item {
+           padding: 6px 0;
+          .a-item {
+            color: map-get($color, gray_3);
+            text-decoration: none;
+            &:hover {
+              color: map-get($color, orange);
+            }
+          }
+        }
+      }
+      .social_block {
+        margin: 20px 0;
+        .social {
+          margin: 0;
+          padding: 0;
+          .social-item {
+            display: inline-block;
+            padding-right: 5px;
+            .fs {
+              border-radius: 100%;
+              height: 30px;
+              width: 30px;
+              text-align: center;
+              line-height: 30px;
+              background: map-get($color, gray_3);
+              &:hover {
+               background: map-get($color, white);
+               color: map-get($color, gray_3);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.wrap-copy {
+  padding: 50px 0;
+  background: map-get($color, black);
+  .copy-left {
+   float: left;
+   color: map-get($color, gray_3);
+   letter-spacing: 1px;
+   font-size: 13px;
+   .link-bl {
+    color: map-get($color, orange);
+    text-decoration: none;
+   }
+  }
+  .copy-right {
+    float: right;
+  }
+}
