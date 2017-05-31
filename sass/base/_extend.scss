@@ -6,7 +6,6 @@
     padding: 60px 0;
     .panel-title-name {
       font-size: 30px;
-      font-family: 'Playfair Display', serif;
       color: map-get($color, white);
     }
    .panel-title-author {
@@ -54,7 +53,6 @@
           text-decoration: none;
           line-height: 20px;
           font-weight: 400;
-          text-transform: uppercase;
           letter-spacing: 1px;
         }
       }

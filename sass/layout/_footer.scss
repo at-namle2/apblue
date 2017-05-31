@@ -7,7 +7,6 @@
       float: left;
       .title-ins {
         color: map-get($color, white);
-        font-size: 20px;
         @extend %title-ins;
       }
       .instagram {
@@ -22,10 +21,8 @@
         }
       }
       .follow {
-        font-size: 13px;
         color: map-get($color, white);
         letter-spacing: 1px;
-        text-transform: uppercase;
       }
     }
     .bg {
@@ -45,10 +42,10 @@
           padding: 20px 70px;
           text-transform: uppercase;
           letter-spacing: 3px;
-          font-size: 13px;
           background: map-get($color, white);
           outline: none;
           border: none;
+          transition: all 0.3s linear;
           &:hover {
             background: map-get($color, black);
             color: map-get($color, white);
@@ -67,16 +64,12 @@
       float: left;
       width: 25%;
       .title-blue {
-        font-size: 30px;
         color: map-get($color, white);
         margin-bottom: 34px;
-        text-transform: uppercase;
       }
       .title-blues {
-        font-size: 15px;
         color: map-get($color, white);
         margin-bottom: 15px;
-        text-transform: uppercase;
       }
       .lorem {
         color: map-get($color, gray_3);
@@ -84,7 +77,6 @@
       .title-ins {
         color: map-get($color, orange);
         margin-top: 10px;
-        font-size: 15px;
         @extend %title-ins;
       }
       .list-blue {
@@ -124,6 +116,7 @@
           .a-item {
             color: map-get($color, gray_3);
             text-decoration: none;
+            transition: all 0.3s linear;
             &:hover {
               color: map-get($color, orange);
             }
@@ -139,7 +132,7 @@
             display: inline-block;
             padding-right: 5px;
             .fs {
-              border-radius: 100%;
+              @include border-radius(100%);
               height: 30px;
               width: 30px;
               text-align: center;
@@ -163,7 +156,6 @@
    float: left;
    color: map-get($color, gray_3);
    letter-spacing: 1px;
-   font-size: 13px;
    .link-bl {
     color: map-get($color, orange);
     text-decoration: none;
@@ -184,24 +176,24 @@
     width: 50px;
     height: 50px;
     display: inline-block;
-    font-size: 0px;
     border: 1px solid map-get($color, black_4);
-    border-radius: 50%;
+    @include border-radius(50%);
     position: relative;
     transition: all 0.5s linear;
+    font-size: 0;
     &:before {
       position: absolute;
+      width: 100%;
       display: block;
       top: 0px;
       left: 0px;
       right: 0px;
-      width: 100%;
       text-align: center;
       font-family: "FontAwesome";
-      font-size: 40px;
       content: "\f106";
       color: map-get($color, black_4);
       line-height: 40px;
+      font-size: 15px;
     }
   }
 }

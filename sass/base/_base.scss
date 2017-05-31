@@ -2,13 +2,6 @@
   margin: 0;
   padding: 0;
 }
-// h1, h2, h3, h4, h5, h6 {
-//   font-family: 'Roboto', sans-serif;
-//   line-height: 1.42857;
-//   color: map-get($color, black);
-//   background-color: map-get($color, white);
-// }
-
 body {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
@@ -18,4 +11,28 @@ body {
 }
 .clearfix {
   clear: both;
+}
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+.font-size-13 {
+  font-size: 13px;
+}
+.font-size-15 {
+  font-size: 15px;
+}
+.font-size-20 {
+  font-size: 20px;
+}
+.font-size-25 {
+  font-size: 25px;
+}
+.font-size-30 {
+  font-size: 30px;
+}
+.font-size-40 {
+  font-size: 40px;
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
