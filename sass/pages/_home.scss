@@ -121,6 +121,10 @@
   background: url(../images/background/3.jpg) no-repeat;
   @extend %penel-content;
 }
+.panel-content-3 {
+  background: url(../images/background/4.jpg) no-repeat;
+  @extend %penel-content;
+}
 .mums {
   width: 100%;
   padding-top: 50px;
