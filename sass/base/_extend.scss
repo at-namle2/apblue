@@ -10,7 +10,7 @@
     }
    .panel-title-author {
       color: map-get($color, white);
-   }
+    }
   }
 }
 %title-ins {
@@ -21,98 +21,133 @@
     padding-bottom: 5px;
   }
 }
-
 %poducts-images {
-    position: relative;
-    overflow: hidden;
-    border: 0;
-    margin: 0;
-    cursor: pointer;
-    .product-meta {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border: 10px solid map-get($color, gray_6);
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background: rgba(255, 255, 255, 0.85);
-      display: none;
-      text-align: center;
-      transition: all 0.3s linear;
-      .grid-title {
-        text-transform: none;
-        margin: 0px;
-        padding: 0px;
-        min-height: 40px;
-        position: relative;
-        top: 35%;
-        .product-name {
-          color: map-get($color, black);
-          font-weight: 700;
-          text-decoration: none;
-          line-height: 20px;
-          font-weight: 400;
-          letter-spacing: 1px;
-        }
-      }
-      .content_price {
-        margin: 5px 0px;
-        position: relative;
-        top: 35%;
-        .price {
-          color:  map-get($color, orange);
-          font-weight: 300;
-          font-size: 15px;
-        }
-      }
-      .cart {
-        position: relative;
-        top: 40%;
-        .span2 {
-          border-bottom: 2px dotted;
-          padding-bottom: 5px;
-        }
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  .product-meta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 10px solid map-get($color, gray_6);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    display: none;
+    text-align: center;
+    transition: all 0.3s linear;
+    .grid-title {
+      text-transform: none;
+      margin: 0px;
+      padding: 0px;
+      min-height: 40px;
+      position: relative;
+      top: 35%;
+      .product-name {
+        color: map-get($color, black);
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
       }
     }
-    .funtions-hover {
-      position: absolute;
-      display: none;
-      z-index: 9;
-      right: 10px;
-      bottom: 10px;
-      .hover-list {
-        margin: 0;
-        padding: 0;
-        .hover-list-item {
-          display: inline-block;
-          .view {
-            border: 1px solid map-get($color, black);
-            font-size: 15px;
-            font-weight: 700;
+    .content_price {
+      margin: 5px 0px;
+      position: relative;
+      top: 35%;
+      .price {
+        color:  map-get($color, orange);
+        font-weight: 300;
+        font-size: 15px;
+      }
+    }
+    .cart {
+      position: relative;
+      top: 40%;
+      .span2 {
+        border-bottom: 2px dotted;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .funtions-hover {
+    position: absolute;
+    display: none;
+    z-index: 9;
+    right: 10px;
+    bottom: 10px;
+    .hover-list {
+      margin: 0;
+      padding: 0;
+      .hover-list-item {
+        display: inline-block;
+        .view {
+          border: 1px solid map-get($color, black);
+          font-size: 15px;
+          font-weight: 700;
+          color: map-get($color, white);
+          background: map-get($color, black);
+          line-height: 40px;
+          opacity: 1;
+          padding: 10px;
+          &:hover {
+            background-color: map-get($color, black_5);
+            border: 1px solid map-get($color, black_5);
             color: map-get($color, white);
-            background: map-get($color, black);
-            line-height: 40px;
-            opacity: 1;
-            padding: 10px;
-            &:hover {
-              background-color: map-get($color, black_5);
-              border: 1px solid map-get($color, black_5);
-              color: map-get($color, white);
-              transition: all 0.35s linear;
-            }
+            transition: all 0.35s linear;
           }
         }
       }
     }
   }
+}
 %hover-images {
   .product-meta {
     display: block;
     visibility: visible;
-    }
+  }
   .funtions-hover {
     display: block;
     visibility: visible;
+  }
+}
+%hover-skist-list {
+  .media-body {
+    display: block;
+  }
+}
+%skist-list {
+  position: relative;
+  .media-body {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 99%;
+    display: none;
+    .article-title {
+      position: relative;
+      top: 35%;
+      .a-enim {
+        text-decoration: none;
+        line-height: 30px;
+        color: map-get($color, white);
+        letter-spacing: 2px;
+      }
+    }
+    .time-s {
+      position: absolute;
+      top: 46%;
+      left: 26%;
+      .time {
+        color: map-get($color, white);
+        letter-spacing: 2px;
+      }
+    }
   }
 }

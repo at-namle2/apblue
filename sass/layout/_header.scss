@@ -57,6 +57,7 @@
       border: 1px solid map-get($color, white);
       color: map-get($color, white);
       background: transparent;
+      transition: all 0.5s linear;
       &:hover {
         background: map-get($color, white);
         color: map-get($color, black);
