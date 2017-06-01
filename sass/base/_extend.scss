@@ -151,3 +151,13 @@
     }
   }
 }
+%sub-menu {
+  position: absolute;
+  display: none;
+  width: 160px;
+  height: 200px;
+  background-color: map-get($color, black);
+  padding: 8px 14px;
+  top: 56px;
+  line-height: 2.8;
+}

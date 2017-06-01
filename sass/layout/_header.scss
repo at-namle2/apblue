@@ -26,6 +26,34 @@
             }
           }
         }
+        &:hover {
+          .sub-menu {
+            display: block;
+          }
+        }
+      }
+     .sub-menu {
+        @extend %sub-menu;
+        .sub-menu-item {
+          .sub-a {
+            color: map-get($color, gray_4);
+            padding: 0 12px;
+            text-decoration: none;
+            display: block;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover {
+              color: map-get($color, orange);
+            }
+          }
+        }
+      }
+    }
+   .dropdown {
+      &:hover {
+        .sub-menu {
+          display: block;
+        }
       }
     }
   }
@@ -58,6 +86,7 @@
       color: map-get($color, white);
       background: transparent;
       transition: all 0.5s linear;
+      cursor: pointer;
       &:hover {
         background: map-get($color, white);
         color: map-get($color, black);
