@@ -4,6 +4,9 @@
     padding: 30px 0 30px;
     .gellery-item {
       float: left;
+      &.gellery-2 {
+        margin-left: 200px;
+      }
       .blockletter {
         .blockter {
           display: inline-block;
@@ -14,15 +17,10 @@
             color: map-get($color, black);
           }
           .over {
-            font-size: 13px;
             color: map-get($color, gray-2);
           }
         }
       }
-    }
-    .gellery-item:nth-child(2) {
-      float: left;
-      margin-left: 200px;
       .page-subheading {
         color: map-get($color, black);
       }
@@ -215,12 +213,10 @@
       bottom: 0;
       background: rgba(255, 255, 255, 0.85);
       display: none;
-      text-align: center;
       transition: all 0.3s linear;
       .grid-title {
+        @extend %mr-pd;
         text-transform: none;
-        margin: 0px;
-        padding: 0px;
         min-height: 40px;
         position: relative;
         top: 35%;
@@ -229,7 +225,6 @@
           font-weight: 700;
           text-decoration: none;
           line-height: 20px;
-          font-weight: 400;
           letter-spacing: 1px;
         }
       }
@@ -259,8 +254,7 @@
       right: 10px;
       bottom: 10px;
       .hover-list {
-        margin: 0;
-        padding: 0;
+        @extend %mr-pd;
         .hover-list-item {
           display: inline-block;
           .view {

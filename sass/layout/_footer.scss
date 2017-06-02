@@ -12,8 +12,7 @@
       .instagram {
         padding: 60px 0;
         .gram {
-          padding: 0;
-          margin: 0;
+          @extend %mr-pd;
           .gram-item {
             display: inline-block;
             padding: 0 40px;
@@ -36,9 +35,9 @@
         padding: 110px 0;
         .btn-find {
           @extend %none;
+          letter-spacing: 3px;
           padding: 20px 70px;
           text-transform: uppercase;
-          letter-spacing: 3px;
           background: map-get($color, white);
           transition: all 0.5s linear;
           &:hover {
@@ -75,9 +74,8 @@
         margin-top: 10px;
       }
       .list-blue {
+        @extend %mr-pd;
         position: relative;
-        margin: 0;
-        padding: 0;
         .list-blue-item {
           color: map-get($color, gray-3);
           margin-bottom: 10px;
@@ -92,8 +90,7 @@
         }
       }
       .list-blues {
-        margin: 0;
-        padding: 0;
+        @extend %mr-pd;
         .list-blues-item {
           padding: 6px 0;
           .a-item {
@@ -109,8 +106,7 @@
       .social_block {
         margin: 20px 0;
         .social {
-          margin: 0;
-          padding: 0;
+          @extend %mr-pd;
           .social-item {
             display: inline-block;
             padding-right: 5px;

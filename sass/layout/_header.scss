@@ -7,8 +7,7 @@
     float: left;
     margin-left: 100px;
     .menu {
-      margin: 0;
-      padding: 0;
+      @extend %mr-pd;
       .menu-item {
         list-style: none;
         display: inline-block;
