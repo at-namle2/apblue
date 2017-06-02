@@ -74,14 +74,10 @@
         font-size: 10px;
         color: map-get($color, orange);
         &:before {
-          content: "( ";
-          position: relative;
-          left: 2px;
+          content: "(";
         }
         &:after {
-          content: " )";
-          position: relative;
-          right: 2px;
+          content: ")";
         }
       }
     }

@@ -100,17 +100,13 @@
   }
 }
 .features {
-  display: block;
-  text-align: center;
   padding-top: 100px;
   cursor: pointer;
   .title-title {
     font-size: 20px;
     color: map-get($color, black);
     .span {
-      border-bottom: 2px dotted;
-      padding-bottom: 5px;
-      font-weight: 500px;
+     @extend %span;
     }
   }
 }
@@ -122,9 +118,7 @@
     color: map-get($color, black);
     margin-bottom: 30px;
     .span {
-      border-bottom: 2px dotted;
-      padding-bottom: 5px;
-      font-weight: 500px;
+      @extend %span;
     }
   }
 }
@@ -132,8 +126,7 @@
   display: block;
   padding: 50px 0 90px;
   .pagi {
-    margin: 0;
-    padding: 0;
+    @extend %mr-pd;
     .pagi-item {
       display: inline-block;
       padding: 5px;
@@ -175,7 +168,7 @@
     .panel-title-name {
       color: map-get($color, white);
     }
-   .panel-title-author {
+    .panel-title-author {
       color: map-get($color, white);
     }
   }
@@ -205,18 +198,17 @@
     cursor: pointer;
     .product-meta {
       position: absolute;
-      width: 100%;
-      height: 100%;
+      width: 93%;
+      height: 94%;
       border: 10px solid map-get($color, gray-6);
       right: 0;
       bottom: 0;
       background: rgba(255, 255, 255, 0.85);
       display: none;
-      transition: all 0.3s linear;
+      transition: all 0.3s ease 0s;
       .grid-title {
         @extend %mr-pd;
-        text-transform: none;
-        min-height: 40px;
+        height: 40px;
         position: relative;
         top: 35%;
         .product-name {
