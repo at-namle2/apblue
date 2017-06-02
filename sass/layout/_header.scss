@@ -61,6 +61,27 @@
     float: right;
     .search-icon {
       padding: 0 10px;
+      color: map-get($color, black);
+    }
+    .cart-a {
+      position: relative;
+      .cartcount {
+        position: absolute;
+        top: -4px;
+        right: -3px;
+        font-size: 10px;
+        color: map-get($color, orange);
+        &:before {
+          content: "( ";
+          position: relative;
+          left: 2px;
+        }
+        &:after {
+          content: " )";
+          position: relative;
+          right: 2px;
+        }
+      }
     }
   }
 }

@@ -1,18 +1,3 @@
-%penel-content {
-  height: 185px;
-  background-size: cover;
-  margin-bottom: 81px;
-  .panel {
-    padding: 60px 0;
-    .panel-title-name {
-      font-size: 30px;
-      color: map-get($color, white);
-    }
-   .panel-title-author {
-      color: map-get($color, white);
-    }
-  }
-}
 %title-ins {
   letter-spacing: 5px;
   text-transform: uppercase;

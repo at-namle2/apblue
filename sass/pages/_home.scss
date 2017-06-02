@@ -132,20 +132,29 @@
   }
 }
 .panel-content {
+  height: 185px;
+  background-size: cover;
+  margin-bottom: 81px;
   background: url(../images/background/1.jpg) no-repeat;
-  @extend %penel-content;
-}
-.panel-content-1 {
-  background: url(../images/background/2.jpg) no-repeat;
-  @extend %penel-content;
-}
-.panel-content-2 {
-  background: url(../images/background/3.jpg) no-repeat;
-  @extend %penel-content;
-}
-.panel-content-3 {
-  background: url(../images/background/4.jpg) no-repeat;
-  @extend %penel-content;
+  &.panel-content-1 {
+    background: url(../images/background/2.jpg) no-repeat;
+  }
+  &.panel-content-2 {
+    background: url(../images/background/3.jpg) no-repeat;
+  }
+  &.panel-content-3 {
+    background: url(../images/background/4.jpg) no-repeat;
+  }
+  .panel {
+    padding: 60px 0;
+    .panel-title-name {
+      font-size: 30px;
+      color: map-get($color, white);
+    }
+   .panel-title-author {
+      color: map-get($color, white);
+    }
+  }
 }
 .mums {
   width: 100%;
