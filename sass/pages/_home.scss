@@ -27,15 +27,16 @@
         color: map-get($color, black);
       }
       .input {
+        @extend %none;
         width: 260px;
         padding: 6px 20px;
         height: 35px;
         margin-left: 10px;
         color: map-get($color, gray-3);
         background: map-get($color, gray-4);
-        @extend %none;
       }
       .subscribe {
+        @extend %none;
         width: 128px;
         padding: 6px 20px;
         height: 47px;
@@ -45,7 +46,6 @@
         line-height: 34px;
         font-weight: 700;
         cursor: pointer;
-        @extend %none;
         &:hover {
           color: map-get($color, orange);
           background: map-get($color, gray-5);

@@ -6,8 +6,8 @@
       width: 50%;
       float: left;
       .title-ins {
-        color: map-get($color, white);
         @extend %title-ins;
+        color: map-get($color, white);
       }
       .instagram {
         padding: 60px 0;
@@ -37,11 +37,11 @@
       .bg-btn {
         padding: 110px 0;
         .btn-find {
+          @extend %none;
           padding: 20px 70px;
           text-transform: uppercase;
           letter-spacing: 3px;
           background: map-get($color, white);
-          @extend %none;
           transition: all 0.5s linear;
           &:hover {
             background: map-get($color, black);
@@ -72,9 +72,9 @@
         color: map-get($color, gray-3);
       }
       .title-ins {
+        @extend %title-ins;
         color: map-get($color, orange);
         margin-top: 10px;
-        @extend %title-ins;
       }
       .list-blue {
         position: relative;
@@ -84,12 +84,12 @@
           color: map-get($color, gray-3);
           margin-bottom: 10px;
           &:before {
-           top: -9px;
-           @extend %list-item-be-af;
+            @extend %list-item-be-af;
+            top: -9px;
           }
           &:after {
-            left: 0;
             @extend %list-item-be-af;
+            left: 0;
           }
         }
       }
@@ -97,7 +97,7 @@
         margin: 0;
         padding: 0;
         .list-blues-item {
-           padding: 6px 0;
+          padding: 6px 0;
           .a-item {
             color: map-get($color, gray-3);
             text-decoration: none;
