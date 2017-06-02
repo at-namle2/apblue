@@ -41,8 +41,7 @@
           text-transform: uppercase;
           letter-spacing: 3px;
           background: map-get($color, white);
-          outline: none;
-          border: none;
+          @extend %none;
           transition: all 0.5s linear;
           &:hover {
             background: map-get($color, black);
@@ -54,7 +53,7 @@
   }
 }
 .wrap-blue {
-  background: map-get($color, black_3);
+  background: map-get($color, black-3);
   height: 400px;
   .blues {
     width: 100%;
@@ -70,7 +69,7 @@
         margin-bottom: 15px;
       }
       .lorem {
-        color: map-get($color, gray_3);
+        color: map-get($color, gray-3);
       }
       .title-ins {
         color: map-get($color, orange);
@@ -82,27 +81,15 @@
         margin: 0;
         padding: 0;
         .list-blue-item {
-          color: map-get($color, gray_3);
+          color: map-get($color, gray-3);
           margin-bottom: 10px;
           &:before {
-            position: absolute;
-            content: "";
-            width: 82px;
-            height: 3px;
-            border-top: 2px dotted map-get($color, black_2);
-            padding-bottom: 10px;
-            top: -9px;
-            left: 0;
+           top: -9px;
+           @extend %list-item-be-af;
           }
           &:after {
-            position: absolute;
-            content: "";
-            width: 82px;
-            height: 3px;
-            border-top: 2px dotted map-get($color, black_2);
-            padding-bottom: 10px;
-            bottom: -20px;
             left: 0;
+            @extend %list-item-be-af;
           }
         }
       }
@@ -112,7 +99,7 @@
         .list-blues-item {
            padding: 6px 0;
           .a-item {
-            color: map-get($color, gray_3);
+            color: map-get($color, gray-3);
             text-decoration: none;
             transition: all 0.3s linear;
             &:hover {
@@ -135,10 +122,10 @@
               width: 30px;
               text-align: center;
               line-height: 30px;
-              background: map-get($color, gray_3);
+              background: map-get($color, gray-3);
               &:hover {
                background: map-get($color, white);
-               color: map-get($color, gray_3);
+               color: map-get($color, gray-3);
               }
             }
           }
@@ -152,7 +139,7 @@
   background: map-get($color, black);
   .copy-left {
    float: left;
-   color: map-get($color, gray_3);
+   color: map-get($color, gray-3);
    letter-spacing: 1px;
    .link-bl {
     color: map-get($color, orange);
@@ -172,7 +159,7 @@
     width: 50px;
     height: 50px;
     display: inline-block;
-    border: 1px solid map-get($color, black_4);
+    border: 1px solid map-get($color, black-4);
     @include border-radius(50%);
     position: relative;
     transition: all 0.5s linear;
@@ -187,7 +174,7 @@
       text-align: center;
       font-family: "FontAwesome";
       content: "\f106";
-      color: map-get($color, black_4);
+      color: map-get($color, black-4);
       line-height: 40px;
       font-size: 15px;
     }
