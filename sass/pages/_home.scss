@@ -173,7 +173,6 @@
   .panel {
     padding: 60px 0;
     .panel-title-name {
-      font-size: 30px;
       color: map-get($color, white);
     }
    .panel-title-author {
@@ -235,7 +234,6 @@
         .price {
           color:  map-get($color, orange);
           font-weight: 300;
-          font-size: 15px;
         }
       }
       .cart {
@@ -259,7 +257,6 @@
           display: inline-block;
           .view {
             border: 1px solid map-get($color, black);
-            font-size: 15px;
             font-weight: 700;
             color: map-get($color, white);
             background: map-get($color, black);
