@@ -7,6 +7,9 @@
     float: left;
     .visit-text {
       padding-left: 360px;
+      .here {
+        color: map-get($color, black);
+      }
     }
   }
   .flext {
