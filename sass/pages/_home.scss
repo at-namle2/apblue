@@ -112,7 +112,6 @@
 }
 .features2 {
   display: block;
-  text-align: center;
   .title-title2 {
     font-size: 20px;
     color: map-get($color, black);
@@ -133,8 +132,8 @@
       width: 12px;
       height: 12px;
       .btn-pagi {
+        @include border-radius(100%);
         background-color: transparent;
-        border-radius: 100%;
         background: map-get($color, gray);
         width: 15px;
         height: 15px;

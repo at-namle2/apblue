@@ -38,7 +38,6 @@
           @include transition (all 0.5s ease-in-out);
           letter-spacing: 3px;
           padding: 20px 70px;
-          text-transform: uppercase;
           background: map-get($color, white);
           &:hover {
             background: map-get($color, black);
