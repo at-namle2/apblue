@@ -1,3 +1,21 @@
+.vnavhead {
+  background: map-get($color, orange);
+  height: 36px;
+  .visit {
+    color: map-get($color, white);
+    padding: 10px 0;
+    float: left;
+    .visit-text {
+      padding-left: 360px;
+    }
+  }
+  .flext {
+    float: right;
+    .flex-prev {
+      color: map-get($color, white);
+    }
+  }
+}
 .wrapper-header {
   padding: 20px 0 15px;
   .logo {
