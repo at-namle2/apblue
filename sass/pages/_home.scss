@@ -197,6 +197,7 @@
     margin: 0;
     cursor: pointer;
     .product-meta {
+      @include transition (all 0.5s ease-in-out);
       position: absolute;
       width: 93%;
       height: 94%;
@@ -205,7 +206,6 @@
       bottom: 0;
       background: rgba(255, 255, 255, 0.85);
       display: none;
-      transition: all 0.3s ease 0s;
       .grid-title {
         @extend %mr-pd;
         height: 40px;
@@ -256,10 +256,10 @@
             opacity: 1;
             padding: 10px;
             &:hover {
+              @include transition (all 0.5s ease-in-out);
               background-color: map-get($color, black-5);
               border: 1px solid map-get($color, black-5);
               color: map-get($color, white);
-              transition: all 0.35s linear;
             }
           }
         }
