@@ -87,12 +87,10 @@
     .mega-title {
       color: map-get($color, white);
       padding: 122px 0 56px;
-      font-size: 40px;
     }
     .mega-subtitle {
       color: map-get($color, white);
-      padding: 0px 0 64px;
-      font-size: 80px;
+      padding: 0 0 64px;
     }
     .mega-sub {
       @include transition(all 0.5s ease-in-out);

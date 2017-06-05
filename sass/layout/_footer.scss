@@ -158,8 +158,8 @@
     &:before {
       position: absolute;
       width: 100%;
-      top: 0px;
-      right: 0px;
+      top: 0;
+      right: 0;
       font-family: "FontAwesome";
       content: "\f106";
       color: map-get($color, gray-5);
