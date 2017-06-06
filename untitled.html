@@ -1,0 +1,66 @@
+ <div class="card-hover">
+                    <div class="cards">
+                      <div class="cart-item">
+                        <img src="images/sample/products/10.jpg" alt="aaa" class="img-cart">
+                      </div>
+                      <div class="cart-item">
+                        <h3 class="font-size-18">Ospyl oish suom-bl<br></h3>
+                        <span>33 x 11111vnd</span>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="cart-total">Subtotal<span class="money">$5,412.00</span></div>
+                  </div>
+
+    .search-icon {
+      padding: 0 10px;
+      color: map-get($color, black);
+      position: relative;
+      .card-hover {
+        background: yellow;
+        padding: 20px;
+        display: none;
+        width: 300px;
+        height: 300px;
+        .cards {
+          border-bottom: 1px solid map-get($color, black);
+          padding: 20px;
+          .cart-item {
+            float: left;
+            width: 35%;
+            .img-cart {
+              width: 50%;
+              height: auto;
+            }
+          }
+        }
+        .cart-total {
+          padding: 15px 0;
+          text-align: left;
+          font-weight: 700;
+          .money {
+            float: right;
+          }
+        }
+      }
+      &:hover {
+        .card-hover {
+          display: block;
+        }
+      }
+    }
+  .cart-a {
+      position: relative;
+      .cartcount {
+        position: absolute;
+        top: -4px;
+        right: -3px;
+        color: map-get($color, orange);
+        &:before {
+          content: "(";
+        }
+        &:after {
+          content: ")";
+        }
+      }
+    }

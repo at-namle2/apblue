@@ -79,32 +79,61 @@
   }
   .search {
     float: right;
-    .search-icon {
-      padding: 0 10px;
-      color: map-get($color, black);
-      position: relative;
-      .mini-cart {
-        min-width: 300px;
-        background: #fff;
-        padding: 10px 15px;
-        display: none;
-        position: absolute;
-        z-index: 100;
-        right: 0;
-      }
-    }
-    .cart-a {
-      position: relative;
-      .cartcount {
-        position: absolute;
-        top: -4px;
-        right: -3px;
-        color: map-get($color, orange);
-        &:before {
-          content: "(";
+    .cards-menu {
+      @extend %mr-pd;
+      .cards-menu-item {
+        display: inline-block;
+        padding-right: 20px;
+        .search-icon {
+          color: map-get($color, black);
+          text-decoration: none;
         }
-        &:after {
-          content: ")";
+        .card-hover {
+          width: 300px;
+          background: map-get($color, white);
+          padding: 10px 15px;
+          display: none;
+          position: absolute;
+          z-index: 100;
+          right: 350px;
+          .cards {
+            border-bottom: 1px solid map-get($color, black);
+            padding: 10px;
+            .cart-item {
+              float: left;
+              width: 50%;
+              .img-cart {
+                width: 35%;
+                height: auto;
+              }
+            }
+          }
+          .cart-total {
+            padding: 15px 0;
+            text-align: left;
+            font-weight: 700;
+            .money {
+              float: right;
+            }
+          }
+        }
+        .cart_checkout {
+          margin: 8px 15px 8px;
+          min-width: 24px;
+          padding: 10px 0;
+          text-transform: uppercase;
+          background: map-get($color, orange);
+          .view-cart {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: map-get($color, white);
+          }
+        }
+        &:hover {
+          .card-hover {
+            display: block;
+          }
         }
       }
     }
