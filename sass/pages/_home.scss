@@ -102,7 +102,7 @@
 .features {
   padding-top: 100px;
   cursor: pointer;
-  .title-title {
+  .title-features {
     font-size: 20px;
     color: map-get($color, black);
     .span {
@@ -163,7 +163,7 @@
     background: url(../images/background/4.jpg) no-repeat;
   }
   .panel {
-    padding: 60px 0;
+    padding: 62px 0;
     .panel-title-name {
       color: map-get($color, white);
     }
